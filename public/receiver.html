@@ -14,19 +14,15 @@
             <div class="form">
                 <h2>Share your files securely.</h2>
                 <div class="form-input">
-                    <button id="sender-start-btn" >Create Room</button>
+                    <button id="receiver-start-btn" >Connect</button>
                 </div>
-                <div class="form-input" id="join-id">
-                    <b>Room Id</b>
-                    <span>000-000-000</span>
-                </div>
+               <div class="form-input">
+                   <label for="join-id">Join Id</label>
+                   <input type="text" id="join-id">
+               </div>
             </div>
         </div>
         <div class="screen fs-screen">
-            <div class="file-input">
-             <label for="file-input">Click here to share files</label>
-             <input type="file" id="file-input">
-            </div>
             <div class="file-list">
                 <div class="title">Shared Files:</div>
                 <div class="item">
@@ -41,7 +37,7 @@
 
 
 
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js"></script>
     <script type="text/javascript" src="socket.io/socket.io.js"></script>
     <script type="text/javascript" src="code.js"></script>
 </body>
